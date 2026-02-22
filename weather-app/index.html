@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球主要城市天气</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>全球主要城市天气</h1>
+            <p class="subtitle" id="update-time">加载中...</p>
+        </header>
+        <div class="weather-grid" id="weather-grid">
+            <!-- Weather cards will be inserted here by JavaScript -->
+        </div>
+        <footer>
+            <button id="refresh-btn" onclick="fetchAllWeather()">刷新天气</button>
+            <p>数据来源: Open-Meteo API</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
